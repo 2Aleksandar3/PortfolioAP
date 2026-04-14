@@ -21,7 +21,15 @@ function App() {
 
         "The work is done in a small team environment with daily meetings and ongoing communication through Slack, with tasks organized in Trello. In addition to implementation and testing, I also contribute general feedback on different aspects of the project, including gameplay and design decisions.",
       ],
-      images: [],
+      images: [
+        "images/GM1.jpg",
+        "images/GM2.jpg",
+        "images/GM3.jpg",
+        "images/GM4.jpg",
+        "images/GM5.jpg",
+        "images/GM6.jpg",
+        "images/GM7,jpg",
+      ],
     },
     {
       title: "SHUTMP",
