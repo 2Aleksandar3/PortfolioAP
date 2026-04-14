@@ -1,0 +1,237 @@
+@font-face {
+  font-family: "MyCustomFont";
+  src: url("./fonts/Rock3D-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "MyParagraphFont";
+  src: url("./fonts/SplineSansMono-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900; /* because it's a variable font */
+  font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "MyCustomFont", sans-serif;
+}
+@media (max-width: 768px) {
+  .project-layout,
+  .project-layout.reverse {
+    flex-direction: column;
+  }
+}
+
+.project-layout {
+  display: flex;
+  gap: 4rem; /* spacing between image and text */
+  align-items: center; /* center vertically */
+}
+.project-layout.reverse {
+  flex-direction: row-reverse;
+  align-items: center; /* also center for reversed layout */
+}
+
+.project-carousel {
+  flex: 1;
+  min-width: 300px;
+}
+
+.project-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.side-nav {
+  position: fixed;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  z-index: 1000;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  color: #2655ff;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+}
+
+.nav-item .dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #2655ff;
+  transition: all 0.3s ease;
+}
+
+.nav-item.active {
+  color: #f73030;
+  font-weight: bold;
+}
+
+.nav-item.active .dot {
+  background-color: #f73030;
+  transform: scale(1.4);
+}
+
+.project-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 100px 0;
+  gap: 50px;
+}
+
+.project-row.reverse {
+  flex-direction: row-reverse;
+}
+
+.project-media {
+  flex: 1;
+}
+
+.project-content {
+  flex: 1;
+  color: white;
+}
+
+/* Carousel */
+.carousel {
+  position: relative;
+  width: 100%;
+}
+
+.carousel img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* Buttons */
+.carousel button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  font-size: 24px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.carousel .prev {
+  left: 10px;
+}
+
+.carousel .next {
+  right: 10px;
+}
+
+body {
+  margin: 0;
+  font-family:
+    "MyParagraphFont", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #ffffff;
+  color: #2f2e2e;
+}
+
+.App {
+  text-align: center;
+  padding: 2rem;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  background-color: #ffffff;
+  z-index: 1000;
+  padding: 1rem 0;
+  transition: box-shadow 0.3s ease;
+}
+
+.header.scrolled {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: #291efb;
+}
+
+.header p {
+  font-family: "MyParagraphFont";
+  font-size: 1.2rem;
+  color: #476ae9;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.project-card {
+  padding: 3rem 5vw; /* use viewport width instead of fixed width */
+  text-align: left;
+  margin: 0;
+  max-width: none;
+  box-shadow: none;
+  border-radius: 0;
+  background: transparent;
+}
+.project-card:nth-child(even) {
+  background-color: #f6ede1d4;
+}
+
+.project-card h2 a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+.project-card h2 a:hover {
+  color: #ff1717;
+}
+
+.alt-bg {
+  background-color: #f6ede1d4;
+}
+
+.project-card h2 {
+  margin-top: 0;
+  color: #291efb;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.project-card p {
+  line-height: 1.6;
+}
+
+.footer {
+  margin-top: 3rem;
+  color: #f73030;
+}
+
+.footer a {
+  color: #291efb;
+  text-decoration: none;
+  margin: 0 0.5rem;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
