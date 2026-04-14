@@ -83,11 +83,11 @@ function App() {
         "As part of the assignment, I extended the game by implementing a new 'Destruct' card, which involved adding new card properties, integrating it into the game controller, and connecting its visual and audio effects to gameplay behavior. This project focused on gameplay logic, interaction systems, and feedback integration.",
       ],
       images: [
-        "/images/unnamed11.png",
-        "/images/unnamed12.png",
-        "/images/unnamed13.png",
-        "/images/unnamed14.png",
-        "/images/unnamed15.png",
+        "images/unnamed11.png",
+        "images/unnamed12.png",
+        "images/unnamed13.png",
+        "images/unnamed14.png",
+        "images/unnamed15.png",
       ],
     },
     {
@@ -112,10 +112,10 @@ function App() {
         "This involved creating a dedicated action script, adding new item properties, and integrating the feature into the existing game controller and interaction system. Through this process, I gained practical experience working with modular systems, extending existing codebases, and implementing new gameplay interactions in a structured architecture.",
       ],
       images: [
-        "/images/unnamed21.png",
-        "/images/unnamed22.png",
-        "/images/unnamed23.png",
-        "/images/unnamed24.png",
+        "images/unnamed21.png",
+        "images/unnamed22.png",
+        "images/unnamed23.png",
+        "images/unnamed24.png",
       ],
     },
   ];
