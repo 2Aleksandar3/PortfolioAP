@@ -28,7 +28,7 @@ function App() {
         "images/GM4.jpg",
         "images/GM5.jpg",
         "images/GM6.jpg",
-        "images/GM7,jpg",
+        "images/GM7.jpg",
       ],
     },
     {
