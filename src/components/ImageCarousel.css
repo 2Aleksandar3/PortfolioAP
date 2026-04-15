@@ -21,11 +21,9 @@ h2 {
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: auto; /* let it grow with image */
-  max-height: none; /* optional cap so it’s not huge */
+  height: auto;
+  max-height: none;
   overflow: visible;
-  /* background: url(/public/border/border2.gif) center/cover no-repeat;
-  */
   box-shadow: none;
   border-radius: 0;
 }
@@ -37,23 +35,31 @@ h2 {
 .image-container img {
   cursor: zoom-in;
   width: 90%;
-  height: auto; /* maintain aspect ratio */
+  height: auto;
   max-height: 100%;
   object-fit: cover;
   border-radius: 10px;
   border: 20px solid transparent;
 
-  border: 20px solid transparent; /* thickness of border */
+  border: 20px solid transparent;
 
-  border-image-source: url("/public/border/border2.gif"); /* ⚠️ PNG works best */
-  border-image-slice: 30; /* 🔥 VERY IMPORTANT */
-  border-image-repeat: round; /* or stretch / repeat */
+  border-image-source: url("/public/border/border2.gif");
+  border-image-slice: 30;
+  border-image-repeat: round;
 
   /*  border-image-source: url("./DotBorder.svg");
   border-image-slice: 30;
   border-image-repeat: stretch;
 
   border-radius: 12px;*/
+}
+
+@supports (not (-webkit-hyphens: none)) and (not (-moz-appearance: none)) and
+  (list-style-type: "*") {
+  .image-container img {
+    border: 20px solid transparent;
+    border-image: url("/public/border/frame0002.png") 30 round;
+  }
 }
 
 /*.image-container::after {
